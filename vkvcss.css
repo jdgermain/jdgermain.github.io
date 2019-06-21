@@ -1,0 +1,33 @@
+body {
+    background-image: url(starfield.gif); 
+    background-color: #ffffff;
+    }
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    }
+h1 {
+    text-shadow: 2px 2px black;
+    }
+#nav_container {
+    list-style-type: none;
+    background: silver;
+    margin-bottom: 15px;
+}
+li {
+    display: inline-block;
+    margin: 5px;
+}
+.center2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+    background: silver;
+    }
+p1 {}
+
