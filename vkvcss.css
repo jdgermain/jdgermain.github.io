@@ -1,7 +1,17 @@
 body {
-    background-image: url(starfield.gif); 
-    background-color: #ffffff;
+/*    text-shadow: 3px 3px grey; */;
+    font-family: sans-serif;
+    font-size: 1.5625em;
     }
+p {background-color: black;
+    border-style: ridge;
+    border-radius: 25px;
+    padding: 1px 16px;
+}
+mark {
+    background-color: black;
+    color: white;
+}
 .center {
     position: absolute;
     left: 50%;
@@ -11,14 +21,23 @@ body {
     }
 h1 {
     text-shadow: 2px 2px black;
+    border-style: ridge;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 25px;
+    padding: 1px 16px;
     }
 #nav_container {
     list-style-type: none;
-    background: silver;
-    margin-bottom: 15px;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  height: 100%; /* Full height */
+  position: absolute; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 li {
-    display: inline-block;
+    display: block;
     margin: 5px;
 }
 .center2 {
@@ -30,4 +49,98 @@ li {
     background: silver;
     }
 p1 {}
+.bodytext {
+    margin-left: 10%;
+    padding: 1px 16px;
+}
 
+
+img.button {
+    border-radius: 25px;
+}
+img.logo {
+    height: 100%;
+    width: 100%;
+}
+iframe {
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this whole section is for animations */
+
+.marquee {
+    margin: 50px auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 0;
+    height: 16px;
+    display: block;
+}
+.marquee2 {
+    margin: 50px auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 0;
+    height: 16px;
+    display: block;
+}
+.marquee span {
+    display: inline-block;
+    text-indent: 0;
+    overflow: hidden;
+    -webkit-transition: 15s;
+    transition: 15s;
+    -webkit-animation: shine 15s linear infinite;
+    animation: shine 15s linear infinite;
+}
+.marquee li {
+    display: block;
+    text-indent: 50px;
+    -webkit-transition: 15s;
+    transition: 15s;
+    -webkit-animation: marquee 15s linear infinite;
+    animation: marquee 15s alternate infinite;
+}
+.marquee2 li {
+    display: block;
+    text-indent: 50px;
+    -webkit-transition: 15s;
+    transition: 15s;
+    -webkit-animation: marquee2 15s linear infinite;
+    animation: marquee2 15s alternate infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translate(0%, 0%); -webkit-transform: translateX(0%); }
+    100% { transform: translate(90%, 75%); -webkit-transform: translateX(90%); }
+}
+@keyframes marquee2 {
+    0% { transform: translate(0%, 0); -webkit-transform: translateX(0%); -webkit-transform: translateY(0%) }
+    100% { transform: translate(90%, 75%); -webkit-transform: translateX(90%); -webkit-transform: translateY(75%) }
+}
+
+@keyframes shine {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+    100% {
+        transform: translatex(100px) translatey(100px);
+    }
+}
