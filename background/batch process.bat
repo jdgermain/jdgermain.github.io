@@ -1,1 +1,0 @@
-for %%a in ("*.jpg") do ffmpeg -i "%%a" "%%~na.png"
