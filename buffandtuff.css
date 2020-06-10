@@ -1,1 +1,14 @@
-<!DOCTYPE CSS>
+body {
+    text-align: center;
+    text-decoration-color: aquamarine;
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+}
+p {
+    text-align: center;
+}
